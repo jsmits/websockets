@@ -20,7 +20,7 @@
             return $(this).attr('id');
         }).get();
 
-        conn = new SockJS('http://localhost:8080/echo', transports);
+        conn = new SockJS('http://' + window.location.host + '/echo', transports);
 
         log('Connecting...');
 
